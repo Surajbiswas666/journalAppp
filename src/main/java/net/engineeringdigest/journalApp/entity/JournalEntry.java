@@ -10,7 +10,7 @@ import com.mongodb.lang.NonNull;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import lombok.RequiredArgsConstructor;
+import net.engineeringdigest.journalApp.enums.Sentiment;
 
 @Document(collection = "journal_entries")
 @Data
@@ -25,5 +25,7 @@ public class JournalEntry {
 	private String content;
 	
 	private LocalDateTime date;
+	
+	private Sentiment sentiment;
 
 }
