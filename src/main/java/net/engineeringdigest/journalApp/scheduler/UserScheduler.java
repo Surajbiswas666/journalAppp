@@ -54,7 +54,8 @@ public class UserScheduler {
                 }
             }
             if (mostFrequentSentiment != null) {  
-                    emailService.sendEmail(user.getEmail(), "Sentiment for previous week", mostFrequentSentiment.toString());
+                   // emailService.sendEmail(user.getEmail(), "Sentiment for previous week", mostFrequentSentiment.toString());
+            	emailService.sendEmail("amitkumarchandwa07@gmail.com", "Hi Amit ,Bando Maghiya", mostFrequentSentiment.toString());
             }
         }
     }

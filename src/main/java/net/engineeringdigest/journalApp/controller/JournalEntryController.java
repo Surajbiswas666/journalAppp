@@ -20,6 +20,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import io.swagger.v3.oas.annotations.tags.Tag;
 import net.engineeringdigest.journalApp.entity.JournalEntry;
 import net.engineeringdigest.journalApp.entity.User;
 import net.engineeringdigest.journalApp.service.JournalEntryService;
@@ -27,6 +28,7 @@ import net.engineeringdigest.journalApp.service.UserService;
 
 @RestController
 @RequestMapping("/journal")
+@Tag(name = "Journal APIs", description = "Read,update and delete Operations")
 public class JournalEntryController {
 
 	@Autowired
